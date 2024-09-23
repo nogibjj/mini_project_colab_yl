@@ -4,9 +4,6 @@
 
 # 706_DE_Individual_Project
 
-# Explanation Video
-
-
 # Directory
 
 Liu_Yirang_Individual_Project_1/
@@ -23,19 +20,18 @@ Liu_Yirang_Individual_Project_1/
 │   ├── __init__.py
 │   └── calculator.py
 ├── .gitignore
-├── returnvsrisk.png
-├── rollingaverage.png
-├── stocks.md
-├── stocks.csv
 ├── Dockerfile
+├── Histogram_of_ShareWomen.png
+├── LICENSE
+├── main.ipynb
 ├── main.py
 ├── Makefile
 ├── README.md
 ├── repeat.sh
 ├── requirements.txt
 ├── setup.sh
-├── test_lib.py
-└── test_main.py
+├── test_main.py
+└── women-stem.csv
 
 # Assignment Requirements
 *  Jupyter Notebook with:
