@@ -1,80 +1,49 @@
+"""
+    library file
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+
+dataset = "women-stem.csv"
 
 
-# Data Loading and Preprocessing:
-def load_and_preprocess(csv):
-    """loads the data"""
-    general_df = pd.read_csv(csv)
-    return general_df
+def load_dataset():
+    """load a dataset from input"""
+    df = pd.read_csv(dataset)
+    return df
 
 
-# Data Operations
-def process_mean(general_df, col):
-    """returns the mean of a specific col in dataframe"""
-    general_mean = general_df[col].mean()
-    return general_mean
+def get_mean(df, col):
+    """calculate the mean of selected column from dataframe"""
+    return df[col].mean()
 
 
-def process_median(general_df, col):
-    """returns the median of a specific col in dataframe"""
-    general_median = general_df[col].median()
-    return general_median
+def get_median(df, col):
+    """calculate the median of selected column from dataframe"""
+    return df[col].median()
 
 
-def process_std(general_df, col):
-    """returns the std of a specific col in dataframe"""
-    general_std = general_df[col].std()
-    return general_std
+def get_std(df, col):
+    """calculate the standard deviation of selected column from dataframe"""
+    return df[col].std()
 
 
-# Charts: mean return vs risk
-def build_chart(general_df, jupyter_render):
-    "visualisation of mean return vs risk"
-    # data_frame = pd.read_csv(csv)
-    ror = general_df.pct_change() * 100
-    mean = ror.mean()
-    standard_deviation = ror.std()
-    plt.scatter(standard_deviation, mean, s=general_df.mean(), alpha=0.4)
-    plt.title("Mean Return vs Risk", fontsize=10, fontweight="bold")
-    plt.xlabel("Risk (standard deviation)", fontsize=10)
-    plt.ylabel("Mean Return", fontsize=10)
-    plt.grid()
-    if not jupyter_render:
-        plt.savefig("returnvsrisk.png")
-    else:
-        plt.show()
-    plt.savefig("returnvsrisk.png")
+def plot_histogram(df, col):
+    """plot histogram plot of selected column from import dataframe"""
+    plt.figure(figsize=(12, 8))
+    sns.histplot(df[col].dropna(), bins=30, kde=True)
+    plt.title("Histogram of " + col)
+    plt.xlabel(col)
+    plt.ylabel("Population")
+    plt.show()
 
 
-# 5 day rolling average
-def rolling_average(general_df, jupyter_render):
-    """line chart"""
-    # general_df = pd.read_csv(general_df)
-    name = "XOM"
-    n = len(general_df)
-    xdata = range(1, n + 1)
-    plt.figure(figsize=(6, 4))
-    plt.plot(
-        xdata,
-        general_df[name],
-        linewidth=1,
-        color="b",
-        alpha=0.8,
-        label="Daily Price Trend",
-    )
-    days = [5, 25, 40, 60, 90, 120]
-    for k in days:
-        ma = general_df.rolling(k).mean()
-        plt.plot(xdata, ma[name], linewidth=1, label="{0}-day moving avg.".format(k))
-    plt.title(
-        "Moving Average Stock Price for {}".format(name), fontsize=10, fontweight="bold"
-    )
-    plt.xlabel("Day", fontsize=10)
-    plt.ylabel("Price", fontsize=10)
-    plt.legend()
-    plt.grid()
-    if not jupyter_render:
-        plt.savefig("rollingaverage.png")
-    else:
-        plt.show()
+def plot_scatter(data, x_col, y_col):
+    """plot scatter plot of selected column from import dataframe"""
+    data.plot.scatter(x=x_col, y=y_col)
+    plt.title(x_col + " vs. " + y_col)
+    plt.xlabel(x_col)
+    plt.ylabel(y_col)
+    plt.show()
