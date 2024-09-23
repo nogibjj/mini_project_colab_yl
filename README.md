@@ -1,3 +1,7 @@
+[![Format](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/format.yml)
+[![Install](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/install.yml)
+
+
 # 706_DE_Individual_Project
 
 # Explanation Video
