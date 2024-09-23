@@ -50,3 +50,5 @@ Liu_Yirang_Individual_Project_1/
 * test_lib.py to test library
 * Pinned requirements.txt
 * GitHub Actions performs all four Makefile commands with badges for each one in the README.md
+
+![alt text](<Histogram_of_ShareWomen.png>)
