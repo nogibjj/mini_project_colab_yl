@@ -5,10 +5,10 @@ format:
 	black *.py
 
 lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py *py
+	ruff check *.py mylib/*.py
 
 test:
-	python -m pytest -cov=main test.py
+	python -m pytest -vv --cov=main --cov=mylib test_*.py
 
 all:
 	install format test lint
