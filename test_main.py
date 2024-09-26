@@ -3,7 +3,7 @@ Test goes here
 
 """
 
-from hello import get_describe, col_summ_stats
+from main import get_describe, col_summ_stats
 
 
 def test_get_describe():
