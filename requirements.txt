@@ -13,5 +13,6 @@ numpy #==2.1.1
 #to lint with ruff and test with nbval plugin
 nbval #==0.10.0  
 ruff #==0.0.284
+seaborn
 
  
