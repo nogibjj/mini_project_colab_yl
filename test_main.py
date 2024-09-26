@@ -3,12 +3,7 @@ Test goes here
 
 """
 
-from hello import (
-    get_describe,
-    col_summ_stats,
-    generate_visualization,
-    save_to_md,
-)
+from hello import get_describe, col_summ_stats
 
 
 def test_get_describe():
