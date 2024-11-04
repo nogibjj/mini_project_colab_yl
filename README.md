@@ -1,12 +1,9 @@
-[![Install](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/install.yml)
-[![Format](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/format.yml)
-[![Lint](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/lint.yml)
-[![Test](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Liu_Yirang_Individual_Project_1/actions/workflows/test.yml)
+# Mini_Project_Colab_YL
 
+## Google Collab Link
+https://colab.research.google.com/drive/1WWXtg0ShwTYmFoFIAYD9chxtZAx8Wvon?usp=sharing
 
-# 706_DE_Individual_Project
-
-# Directory
+## Directory
 
 Liu_Yirang_Individual_Project_1/
 ├── .devcontainer/
@@ -25,28 +22,43 @@ Liu_Yirang_Individual_Project_1/
 ├── Dockerfile
 ├── Histogram_of_ShareWomen.png
 ├── LICENSE
+├── main.html
 ├── main.ipynb
+├── main.pdf
 ├── main.py
 ├── Makefile
 ├── README.md
 ├── repeat.sh
 ├── requirements.txt
+├── Scatter_of_ShareWomen.png
 ├── setup.sh
+├── Stat_Summary.png
 ├── test_main.py
 └── women-stem.csv
 
-# Assignment Requirements
-*  Jupyter Notebook with:
-    * Cells that perform descriptive statistics using Polars or Panda
-    * Tested by using nbval plugin for pytest
-* Makefile with the following:
-    * Run all tests (must test notebook and script and lib)
-    * Formats code with Python Black
-    * Lints code with Ruff
-    * Installs code via: pip install -r requirements.txt
-* test_script.py to test script
-* test_lib.py to test library
-* Pinned requirements.txt
-* GitHub Actions performs all four Makefile commands with badges for each one in the README.md
+## Project Introduction
+This project aims to set up and utilize a cloud-hosted Jupyter Notebook environment (i.e. Google Colab) to analyze a job application dataset published by the City of Los Angeles. The analysis involves data manipulation such as generating summary statistics and visualizing data to reveal trends in gender and ethnicity among job applicants. 
 
+## Assignment Requirements
+* Set up a cloud-hosted Jupyter Notebook (e.g., Google Colab)
+* Perform data manipulation tasks on a sample dataset
+
+## Grading Criteria
+* Setup and configuration (20 points)
+* Data manipulation tasks (20 points)
+* CI/CD pipeline (10 points)
+* README.md (10 points)
+
+## Deliverables
+* Link to the cloud-hosted notebook
+* Document or video demonstrating the tasks performed
+
+## Submission 
+* Public repository URL
+
+## Statistic Summary 
+![alt text](Stat_Summary.png)
+
+## Data Visualizations
 ![alt text](<Histogram_of_ShareWomen.png>)
+![alt text](Scatter_of_ShareWomen.png)
