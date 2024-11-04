@@ -1,3 +1,8 @@
+[![Test](https://github.com/nogibjj/mini_project_colab_yl/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/mini_project_colab_yl/actions/workflows/test.yml)
+[![Install](https://github.com/nogibjj/mini_project_colab_yl/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/mini_project_colab_yl/actions/workflows/install.yml)
+[![Lint](https://github.com/nogibjj/mini_project_colab_yl/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/mini_project_colab_yl/actions/workflows/lint.yml)
+[![Format](https://github.com/nogibjj/mini_project_colab_yl/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/mini_project_colab_yl/actions/workflows/format.yml)
+
 # Mini_Project_Colab_YL
 
 ## Google Collab Link
